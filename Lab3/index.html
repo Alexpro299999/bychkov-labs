@@ -1,0 +1,26 @@
+<!-- 8.	Дан текст, содержащий не более 250 символов.
+В тех словах, которые заканчиваются сочетанием букв «ый», заменить это сочетание на «ая».-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка текста</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Замена «ый» на «ая»</h1>
+    <div class="input-section">
+        <label for="textInput">Введите текст (до 250 символов):</label>
+        <textarea id="textInput" rows="5" maxlength="250" placeholder="Например: Новый год — самый веселый и добрый праздник."></textarea>
+        <button id="processBtn">Обработать</button>
+    </div>
+    <div id="results">
+        <h2>Результат:</h2>
+        <p id="resultText"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
