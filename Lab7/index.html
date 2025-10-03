@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="task">
+        <h2>1. Выбрать вложенные DIV элементы</h2>
+        <div class="test-area">
+            <div>Я родительский DIV 1
+                <div>Я дочерний DIV (должен выбраться)</div>
+            </div>
+            <div>Я родительский DIV 2
+                <p>Текст в параграфе
+                <div>Я DIV внутри P (не должен выбраться)</div>
+                </p>
+            </div>
+            <div>Я родительский DIV 3
+                <div>Я еще один дочерний DIV (должен выбраться)</div>
+            </div>
+        </div>
+        <button id="queryBtn">Выбрать с querySelectorAll()</button>
+        <button id="tagBtn">Выбрать с getElementsByTagName()</button>
+        <button id="resetBtn">Сбросить выделение</button>
+    </div>
+
+    <div class="task">
+        <h2>2. Вывести значение в консоль</h2>
+        <input type="text" id="textInput" value="Katyusha">
+        <button id="logBtn">Поместим в консоль</button>
+    </div>
+
+    <div class="task">
+        <h2>3. Изменить цвет фона</h2>
+        <label for="colorInput">Change Background Color</label>
+        <input type="color" id="colorInput" value="#6600cc">
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
