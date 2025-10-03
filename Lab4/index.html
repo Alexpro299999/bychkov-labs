@@ -1,0 +1,37 @@
+<!-- 1. Написать JavaScript функцию,  которая переворачивает строку и возвращает ее.
+    * Пример:" "sample"  "elpmas".
+ 2. Напишите JavaScript функцию, чтобы проверить, правильно ли помещены скобки в заданном выражении.
+    * Пример правильного выражения: '((a + b) / 5-d)'.
+    * Пример неправильного выражения:') (a + b))'.-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Функции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>JavaScript Функции</h1>
+
+    <div class="task">
+        <h2>1. Перевернуть строку</h2>
+        <input type="text" id="stringInput" placeholder="Введите строку, например, sample">
+        <button onclick="handleReverseString()">Перевернуть</button>
+        <div id="reverseResult" class="result" style="display: none;"></div>
+    </div>
+
+    <div class="task">
+        <h2>2. Проверить правильность расстановки скобок</h2>
+        <input type="text" id="expressionInput" placeholder="Введите выражение, например, ((a+b)/5-d)">
+        <button onclick="handleCheckBrackets()">Проверить</button>
+        <div id="bracketsResult" class="result" style="display: none;"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
