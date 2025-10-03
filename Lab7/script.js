@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function selectDivsWithQuerySelectorAll() {
         resetSelection();
         const nestedDivs = document.querySelectorAll('div > div');
-        nestedDivs.forEach(div => div.classList.add('highlighted'));
+        nestedDivs.forEach(div => div.classList.add('highlighted-green'));
     }
 
     function selectDivsWithGetElementsByTagName() {
@@ -15,14 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i = 0; i < allDivs.length; i++) {
             const div = allDivs[i];
             if (div.parentNode && div.parentNode.tagName === 'DIV') {
-                div.classList.add('highlighted');
+                div.classList.add('highlighted-red');
             }
         }
     }
 
     function resetSelection() {
-        const highlightedDivs = document.querySelectorAll('.highlighted');
-        highlightedDivs.forEach(div => div.classList.remove('highlighted'));
+        const greenDivs = document.querySelectorAll('.highlighted-green');
+        const redDivs = document.querySelectorAll('.highlighted-red');
+        greenDivs.forEach(div => div.classList.remove('highlighted-green'));
+        redDivs.forEach(div => div.classList.remove('highlighted-red'));
     }
 
     queryBtn.addEventListener('click', selectDivsWithQuerySelectorAll);

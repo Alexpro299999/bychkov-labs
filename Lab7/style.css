@@ -58,7 +58,14 @@ input[type="color"] {
     margin-top: 5px;
     border: 1px solid #999;
 }
-.highlighted {
+/* Зеленая подсветка */
+.highlighted-green {
+    background-color: #ddffdd;
+    border-color: #00aa00 !important;
+    font-weight: bold;
+}
+/* Красная подсветка */
+.highlighted-red {
     background-color: #ffdddd;
     border-color: #ff0000 !important;
     font-weight: bold;
