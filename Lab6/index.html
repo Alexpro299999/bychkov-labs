@@ -1,0 +1,41 @@
+<!-- 1 Напишите функцию, которая переворачивает цифры заданного десятичного числа. Например: 256  652.
+2. Напишите функцию, которая проверяет, является ли элемент в заданной позиции в заданном массиве целых чисел большим,
+чем его два соседа – слева и справа (когда такие существуют).
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Функции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>JavaScript Функции</h1>
+
+    <div class="task">
+        <h2>1. Перевернуть цифры в числе</h2>
+        <input type="number" id="numberInput" placeholder="Введите число, например, 256">
+        <button onclick="handleReverseNumber()">Перевернуть</button>
+        <div id="reverseResult" class="result" style="display: none;"></div>
+    </div>
+
+    <div class="task">
+        <h2>2. Сравнить элемент с соседями</h2>
+        <label for="arrayInput">Введите массив чисел через запятую:</label>
+        <input type="text" id="arrayInput" placeholder="например, 1, 5, 3, 6, 2">
+
+        <label for="indexInput">Введите индекс для проверки:</label>
+        <input type="number" id="indexInput" placeholder="например, 1">
+
+        <button onclick="handleCheckNeighbors()">Проверить</button>
+        <div id="neighborsResult" class="result" style="display: none;"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
