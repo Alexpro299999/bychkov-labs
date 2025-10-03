@@ -1,0 +1,65 @@
+<!-- На языке JS разработать 4 программы, используя функции. Ввод-вывод осуществлять через через свою консоль (не консоль браузера!!!)
+1. Function Declaration Statement
+Создайте функцию conc, которая должна соединять два параметра a и b и возвращать соединяющую строку с помощью оператора function Declaration (FDS). Вызов этой функции должен происходить перед ее объявлением. Тестовые данные: a =1, b =1, результат = 11.
+2. Function Definition Expression
+Создайте функцию comp, которая должна сравнить два параметра a и b и возвратить 1, если a равно b и -1, если a не равно b, используя Function Definition Expression. Тестовые данные: а = abc, b = abc, результат =1, а = abC, b = abc, результат= -1.
+3. Anonymous Function
+Создайте анонимную функцию, которая должна вывести сообщение «message in console» в консоли.
+4. (Последовательность Фибоначчи)
+Последовательность чисел Фибоначчи вычисляется по формуле формулу F(n) = F(n-1) + F(n-2). В ней каждое следующее число вычисляется как сумма двух предыдущих. Первые два числа равны 1 и 1.
+Напишите функцию fib(n), которая возвращает n-е число Фибоначчи.
+Например:
+console.log(fib(3)); //2
+console.log(fib(7)); //13
+console.log(fib(77)); //5527939700884757
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS Functions Homework</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="js-console.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <a href="#" id="nav-p1" onclick="showProblem(1)">01-Function Declaration</a> |
+    <a href="#" id="nav-p2" onclick="showProblem(2)">02-Function Expression</a> |
+    <a href="#" id="nav-p3" onclick="showProblem(3)">03-Anonymous Function</a> |
+    <a href="#" id="nav-p4" onclick="showProblem(4)">04-Fibonacci</a>
+</header>
+
+<div id="problem1" class="problem-container">
+    <label for="p1-a">Параметр a:</label>
+    <input type="text" id="p1-a" value="1">
+    <label for="p1-b">Параметр b:</label>
+    <input type="text" id="p1-b" value="1">
+    <button onclick="runProblem1()">Execute</button>
+</div>
+
+<div id="problem2" class="problem-container">
+    <label for="p2-a">Строка a:</label>
+    <input type="text" id="p2-a" value="abc">
+    <label for="p2-b">Строка b:</label>
+    <input type="text" id="p2-b" value="abc">
+    <button onclick="runProblem2()">Execute</button>
+</div>
+
+<div id="problem3" class="problem-container">
+    <p>Вызов анонимной функции для вывода сообщения.</p>
+    <button onclick="runProblem3()">Execute</button>
+</div>
+
+<div id="problem4" class="problem-container">
+    <label for="p4-number">Вычислить fib(n), где n:</label>
+    <input type="number" id="p4-number" value="7" min="1">
+    <button onclick="runProblem4()">Execute</button>
+</div>
+
+<div id="console"></div>
+
+<script src="js-console.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

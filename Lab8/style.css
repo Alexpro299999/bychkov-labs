@@ -1,0 +1,54 @@
+body {
+    background: black;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+#console {
+    overflow: auto;
+    border: 1px solid #00FF00;
+    margin: 20px 0 0 0;
+    color: #00FF00;
+    height: 400px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    background: #535353;
+    height: 20px;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+button {
+    background: #e0e0e0;
+    border: 1px solid #949494;
+    width: 192px;
+    height: 30px;
+    padding-left: 0;
+    color: #1c1c1c;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+}
+input {
+    background: #282828;
+    border: 1px solid #949494;
+    width: 180px;
+    height: 25px;
+    padding-left: 10px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.problem-container {
+    padding: 10px;
+    display: none;
+}
+label {
+    display: block;
+    margin: 5px 0;
+}
