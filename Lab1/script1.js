@@ -35,5 +35,3 @@ function findElementsLessThanAverage() {
         `Количество элементов, меньших среднего: ${count}`
     );
 }
-
-findElementsLessThanAverage();

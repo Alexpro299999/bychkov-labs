@@ -1,0 +1,27 @@
+<!-- 1. Найти сумму элементов в тех столбцах, которые содержат хотя бы один положительный элемент. -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 1: Сумма столбцов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Задача 1: Сумма столбцов с положительным элементом</h1>
+    <div class="input-section">
+        <label for="matrixInput">Введите матрицу N x N (числа через пробел, строки через Enter):</label>
+        <textarea id="matrixInput" rows="5" placeholder="1 2 -3&#10;4 -5 6&#10;-7 8 9"></textarea>
+        <button id="calculateBtn">Вычислить</button>
+    </div>
+    <div id="results">
+        <h2>Результаты:</h2>
+        <p><strong>Исходная матрица:</strong></p>
+        <div id="originalMatrix"></div>
+        <p><strong>Сумма элементов в нужных столбцах:</strong> <span id="sumResult"></span></p>
+    </div>
+</div>
+<script src="script1.js" defer></script>
+</body>
+</html>
