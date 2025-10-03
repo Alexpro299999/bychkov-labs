@@ -1,0 +1,30 @@
+<!-- 2)Дан вещественный вектор A(n). Получить новый вектор путем умножения элементов
+стоящих перед минимальным элементом на максимальный элемент вектора. На печать выдавать
+исходный вектор, максимальный, минимальный элементы и полученный вектор-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 2: Преобразование вектора</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="container">
+    <h1>Задача 2: Преобразование вектора</h1>
+    <div class="input-section">
+        <label for="arrayInput">Введите элементы вектора через запятую:</label>
+        <input type="text" id="arrayInput" placeholder="например, 5, 2, 8, 1, 9">
+        <button onclick="processVector()">Обработать</button>
+    </div>
+    <div id="results">
+        <h2>Результаты:</h2>
+        <p><strong>Исходный вектор:</strong> <span id="originalVector"></span></p>
+        <p><strong>Максимальный элемент:</strong> <span id="maxElement"></span></p>
+        <p><strong>Минимальный элемент:</strong> <span id="minElement"></span></p>
+        <p><strong>Полученный вектор:</strong> <span id="resultVector"></span></p>
+    </div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
